@@ -1,0 +1,138 @@
+.m-product-filter {
+    h1 {
+        text-decoration: underline;
+        font-size: 32px;
+        margin-top: -10px;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 24px;
+        color: $bright-gradient-color;
+    }
+}
+
+.m-product-name {
+    margin-bottom: 40px;
+    input {
+        width: 20px;
+    }
+
+    label {
+        display: inline-block;
+        color: $third-color;
+        font-weight: 500;
+    }
+    
+    div {
+        margin-bottom: 10px;
+    }
+
+    .m-razer-filter, 
+    .m-logitech-filter, 
+    .m-hp-filter {
+        position: relative;
+        label {
+            position: absolute;
+            top: 6px;
+            left: 30px;
+        }
+    }
+}
+
+.m-product-price {
+    input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    input::placeholder{
+        color: $third-color;
+    }
+}
+
+.m-scope-product {
+    margin-top: 10px;
+    position: relative;
+    color:$bright-gradient-color;
+    .m-scope-number-two {
+        margin-left: 46%;
+    }
+
+    .m-scope-number-three {
+        position: absolute;
+        right: 0px;
+    }
+}
+
+.m-product-disponibility {
+    position: relative;
+    label {
+        position: absolute;
+        top: 6px;
+        left: 30px;
+        color: $third-color;
+        font-weight: 500;
+    }
+
+    input{
+        width: 20px;
+    }
+}
+
+.m-product-list-page {
+    margin-left: 10%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    span {
+        display: inline-block;
+        background-color: white;
+        color: $bright-gradient-color;
+        border: 1px solid $bright-gradient-color;
+        padding: 10px;
+        margin-right: auto;
+    }
+
+    .m-current-page {
+        border-color: $secondary-color;
+        color: $secondary-color;
+        font-weight: 900;
+    }
+}
+
+.m-items-product-list {
+    margin-bottom: 20px;
+    a {
+        display: inline-block;
+        margin-top: 30px;
+        color: $bright-gradient-color;
+        text-decoration: underline;
+        font-weight: 900;
+    }
+
+    p {
+        color: $third-color;
+    }
+}
+
+.m-command-confirmation {
+    position: relative;
+    .m-price {
+        margin-top: 10px;
+    }
+    a {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: -44px;
+    }
+}
+
+
+

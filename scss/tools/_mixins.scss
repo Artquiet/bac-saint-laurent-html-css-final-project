@@ -1,0 +1,22 @@
+@mixin xs {
+    @media screen and (min-width: $xs) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media screen and (min-width: map-get($break-point, md)) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media screen and (min-width: map-get($break-point, lg)) {
+        @content;
+    }
+}
+
+
+
+
+

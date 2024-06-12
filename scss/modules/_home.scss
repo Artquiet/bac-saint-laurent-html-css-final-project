@@ -1,0 +1,132 @@
+// design commun a toute les pages
+.m-box-content {
+    background-color: $main-color;
+    max-width: 1100px;
+    width: 78%;
+    margin: 0px auto 10px;
+    padding: 20px;
+}
+
+.m-form-button-component {
+    display: block;
+    background-color: $dark-gradient-color;
+    color: $main-color;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    border-style: none;
+    width: 120px;
+    height: 40px;
+    margin: 20px 0px 20px 0px;
+}
+
+.m-form-button-component::before {
+    content: "";
+    display: inline-block;
+    background: url("../images/send-icon.svg") no-repeat center/contain;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-top: -4px;
+    margin-left: -10px;
+    padding-left: 20px;
+}
+
+.m-form-send-button-component {
+    display: block;
+    background-color: $bright-gradient-color;
+    color: $main-color;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    border-style: none;
+    width: 120px;
+    height: 40px;
+    margin: 20px 0px 20px 0px;
+}
+
+.m-product-price {
+    color: $secondary-color;
+    font-weight: 900;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.m-product-stock {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.m-add-to-cart-button {
+    border: none;
+    background-color: $dark-gradient-color;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 8px 14px;
+    margin-left: 14px;
+} 
+
+.m-add-to-cart-button::before {
+    content: "";
+    display: inline-block;
+    background: url(../images/cart-shopping-icon.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-bottom: -4px;
+    padding-left: 8px;
+}
+// bannière design index html
+
+.m-banner {
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
+    }
+    
+    .m-banner-representation {
+        position: relative;
+            span {
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                max-width: 1100px;
+                width: 100%;
+                margin: 0 auto;
+                color: $main-color;
+                text-align: center;
+                font-size: 12px;
+            }
+}
+
+// design index html
+.m-category-list {
+    h1 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-left: 12%;
+    }
+
+    .m-box-content {
+        margin-bottom: 20px;
+    }
+
+    a {
+        color: $dark-gradient-color;
+    }
+}
+
+.m-news,
+.m-promotion,
+.m-category {
+    p {
+        margin-top: 30px;
+    }
+}
+
+.m-discover {
+    p {
+        margin-top: -10px;
+    }
+}

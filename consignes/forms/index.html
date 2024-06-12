@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/screen.css" />
+    </head>
+    <body>
+        <!--
+        <form class="m-form-login" method="post" action="login.php">
+            <div>
+                <label for="login">Login</label>
+                <input type="text" placeholder="max 20 caractères" name="login" id="login" minlength="2" required />
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" minlength="8"  />
+            </div>
+        </form>
+        -->
+
+        <form class="m-form-registration" method="post" action="index.html">
+            <div>
+                <label for="lastname">Nom</label>
+                <input type="text" name="lastname" id="lastname" minlength="8" required />
+            </div>
+            <div>
+                <label for="firstname">Prénom</label>
+                <input type="text" name="firstname" id="firstname"  />
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" />
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" min="18" max="125" />
+            </div>
+            <div>
+                <label for="date">Date de l'évènement</label>
+                <input type="date" name="date" id="date" />
+            </div>
+            <div>
+                <label>Sexe</label>
+                <div>
+                    <input type="radio" name="sexe" id="sexe_homme" value="Homme" />
+                    <label for="sexe_homme">Je suis un homme</label>
+
+                    <input type="radio" name="sexe" id="sexe_femme" value="Femme" />
+                    <label for="sexe_femme">Je suis une femme</label>
+                    
+                    <input type="radio" name="sexe" id="sexe_autre" value="Autre" />
+                    <label for="sexe_autre">ça ne vous regarde pas</label>
+                </div>
+            </div>
+            <div>
+                <label>J'accepte les conditions</label>
+                <input type="checkbox" name="cgu" id="cgu" required />
+                <label for="cgu">*J'accepte les CGU que personne le lit...</label>
+            </div>
+
+            <div>
+                <label for="howAreYou">How about you?</label>
+                <textarea name="howAreYou" id="howAreYou"></textarea>
+            </div>
+            <div>
+                <label for="country">Votre pays</label>
+                <select name="country" id="country" required>
+                    <option value="">Choisissez</option>
+                    <option value="be">Belgique</option>
+                    <option value="fr">France</option>
+                    <option value="lu">Luxembourg</option>
+                </select>
+            </div>
+            <input type="submit" value="Send it" />
+        </form>
+    </body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <link rel="stylesheet" href="css/screen.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+    <link rel="preconnect" href="font/VesperLibre-Black.ttf">
+    <link rel="preconnect" href="font/VesperLibre-Bold.ttf">
+    <link rel="preconnect" href="font/VesperLibre-Medium.ttf">
+    <link rel="preconnect" href="font/VesperLibre-Regular.ttf">
+    <title> Détail de la commande </title>
+</head>
+
+<body>
+    <header>
+        <div class="l-group-menu">
+            <div class="l-home-menu">
+                <div class="l-logo-icon-frame">
+                    <a href="index.html">
+                        <img src="images/inforshop.png" alt="logo-inforshop-site-officiel" class="l-logo" />
+                    </a>
+                </div>
+                <!-- icone interactive burger menu -->
+                <a href="#" class="l-burger-menu" id="menuHamburger">
+                    <img src="images/burger-menu-icon.svg" alt="menu deroullant du site" />
+                </a>
+                <div id="mainMenu" class="l-nav">
+                    <a href="#" id="menuClose">
+                        <img src="images/close-solid-icon.svg" alt="menu retour page de navigation">
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="index.html"> Acceuil </a>
+                        </li>
+                        <li>
+                            <a href="product-list.html"> Produits </a>
+                        </li>
+                        <li>
+                            <a href="contact.html"> Contact </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="l-connexion-menu">
+                <a href="login.html">
+                    <div class="l-account-icon-design">
+                        <img src="images/user-icon.svg" alt="image connexion utilisateur" />
+                        <span> Compte </span>
+                    </div>
+                </a>
+                <a href="order.html">
+                    <div class="l-shopping-icon-design">
+                        <span class="l-alert-bubble"> 0 </span>
+                        <img src="images/cart-shopping-icon.svg" alt="image panier d achat" />
+                        <span> Panier </span>
+                    </div>
+                </a>
+            </div>
+            <form class="l-search-bar">
+                <input placeholder="Cherchez un produit ..." type="text" name="search product" />
+                <a href="#">
+                    <img src="images/magnifying-glass-icon.svg" alt="icone de recherche de produit" />
+                </a>
+            </form>
+        </div>
+    </header>
+    <main>
+        <div class="m-breadcrumb-list">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="images/home-icon.svg" alt="fil arianne iconne acceuil site">
+                    </a>
+                </li>
+                <li>
+                    <img class="m-breadcrumb-symbol" src="images/arrow-symbol-breadcrumb.svg"
+                        alt="fil arianne symbole fleche">
+                </li>
+                <li>
+                    <a href="order.html">Mon panier</a>
+                </li>
+                <li>
+                    <img class="m-breadcrumb-symbol" src="images/arrow-symbol-breadcrumb.svg"
+                        alt="fil arianne symbole fleche">
+                </li>
+                <li>
+                    <a href="orders-details.html"> Commande </a>
+                </li>
+            </ul>
+        </div>
+        <div class="m-box-content">
+            <form>
+                <h1> Commande </h1>
+                <div class="delivery-adress">
+                    <h2> Adresse de livraison </h2> 
+                    <div class="typing-icon-placement">    
+                        <label> Rue *</label>
+                        <input type="text"  placeholder="Rue" name="street" id="street" required>
+                    </div>
+                    <div class="typing-icon-placement">
+                        <label> Numéro de maison *</label>
+                        <input type="number" placeholder="numero de maison" name="numberHouse" id="numberHouse" required>
+                    </div>  
+                    <div class="typing-icon-placement building-icon">
+                        <label> Localité *</label>
+                        <input type="text" placeholder="Localité" name="localisation" id="localisation" required>
+                    </div>
+                    <div class="typing-icon-placement building-icon">
+                        <label> Code postal *</label>
+                        <input type="number" placeholder="Code postal" name="postal-number" id="postal-number" required>
+                    </div>
+                    <div class="typing-icon-placement earth-globe-icon">
+                        <label for="country"> Pays *</label>
+                        <select id="country" required>
+                            <option value=""> Pays </option>
+                            <option value="Belgique"> Belgique </option>
+                            <option value="France"> France </option>
+                            <option value="Suisse"> Suisse </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="billing-adress">
+                    <h2> Adresse de facturation </h2>
+                    <div class="typing-icon-placement">
+                        <label> Rue </label>
+                        <input type="text"  placeholder="Rue" name="street" id="streetConfirmation">
+                    </div>
+                    <div class="typing-icon-placement">
+                        <label> Numéro de maison </label>
+                        <input type="number" placeholder="Numéro de maison" name="numberHouseConfirmation" id="numberHouseConfirmation">
+                    </div>
+                    <div class="typing-icon-placement building-icon">
+                        <label> Localité </label>
+                        <input type="text" placeholder="Localité" name="localisationConfirmation" id="localisationConfirmation">
+                    </div>
+                    <div class="typing-icon-placement building-icon">
+                        <label> Code postal </label>
+                        <input type="number" placeholder="Code postal" name="postalNumberConfirmation" id="postalNumberConfirmation">
+                    </div>
+                    <div class="typing-icon-placement earth-globe-icon">
+                        <label> Pays </label>
+                        <select name="country" id="countryConfirmation">
+                            <option value="user-choice"> Pays </option>
+                            <option value="Belgique"> Belgique </option>
+                            <option value="France"> France </option>
+                            <option value="Suisse"> Suisse </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="way-payment">
+                    <h2> Moyen de paiement </h2>
+                    <div class="typing-icon-placement credit-card-icon">
+                        <label> Moyen de payement *</label>
+                        <select name="card-choice" id="card-choice" required>
+                            <option value=""> Mode de paiement </option>
+                            <option value="visa"> Visa </option>
+                            <option value="mastercard"> Mastercard </option>
+                        </select>
+                    </div>
+                </div>
+                <button class="m-form-button-component"> Valider </button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="l-main-footer">
+            <p>
+                © Inforshop.store & site by changer en lien
+                <a href="#"> isl scrl </a>
+            </p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

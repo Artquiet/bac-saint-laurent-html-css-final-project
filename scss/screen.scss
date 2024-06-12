@@ -1,0 +1,25 @@
+// import reset css & mixins
+@import "tools/reset";
+@import "tools/mixins";
+
+// fichier de base
+@import "base/variables";
+@import "base/base";
+@import "base/form";
+
+// @import "layout/layout";
+// layout complex
+@import "layout/layout";
+@import "layout/header";
+@import "layout/nav";
+@import "layout/footer";
+
+// home
+@import "modules/home";
+@import "modules/home/breadcrumb";
+@import "modules/home/products-description";
+@import "modules/home/product-list";
+@import "modules/home/contact.scss";
+@import "modules/home/register";
+@import "modules/home/order";
+

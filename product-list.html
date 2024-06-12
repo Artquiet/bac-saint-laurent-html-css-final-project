@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <link rel="stylesheet" href="css/screen.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+    <link rel="preconnect" href="font/VesperLibre-Black.ttf">
+    <link rel="preconnect" href="font/VesperLibre-Bold.ttf">
+    <link rel="preconnect" href="font/VesperLibre-Medium.ttf">
+    <link rel="preconnect" href="font/VesperLibre-Regular.ttf">
+    <title> Liste des produits </title>
+</head>
+
+<body>
+    <header>
+        <div class="l-group-menu">
+            <div class="l-home-menu">
+                <div class="l-logo-icon-frame">
+                    <a href="index.html">
+                        <img src="images/inforshop.png" alt="logo-inforshop-site-officiel" class="l-logo" />
+                    </a>
+                </div>
+                <!-- icone interactive burger menu -->
+                <a href="#" class="l-burger-menu" id="menuHamburger">
+                    <img src="images/burger-menu-icon.svg" alt="menu deroullant du site" />
+                </a>
+                <div id="mainMenu" class="l-nav">
+                    <a href="#" id="menuClose">
+                        <img src="images/close-solid-icon.svg" alt="menu retour page de navigation">
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="index.html"> Acceuil </a>
+                        </li>
+                        <li>
+                            <a href="product-list.html"> Produits </a>
+                        </li>
+                        <li>
+                            <a href="contact.html"> Contact </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="l-connexion-menu">
+                <a href="login.html">
+                    <div class="l-account-icon-design">
+                        <img src="images/user-icon.svg" alt="image connexion utilisateur" />
+                        <span> Compte </span>
+                    </div>
+                </a>
+                <a href="order.html">
+                    <div class="l-shopping-icon-design">
+                        <span class="l-alert-bubble"> 0 </span>
+                        <img src="images/cart-shopping-icon.svg" alt="image panier d achat" />
+                        <span> Panier </span>
+                    </div>
+                </a>
+            </div>
+            <form class="l-search-bar">
+                <input placeholder="Cherchez un produit ..." type="text" name="search product" />
+                <a href="#">
+                    <img src="images/magnifying-glass-icon.svg" alt="icone de recherche de produit" />
+                </a>
+            </form>
+        </div>
+    </header>
+    <main>
+        <div class="m-breadcrumb-list">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="images/home-icon.svg" alt="fil arianne iconne acceuil site">
+                    </a>
+                </li>
+                <li>
+                    <img class="m-breadcrumb-symbol" src="images/arrow-symbol-breadcrumb.svg"
+                        alt="fil arianne symbole fleche">
+                </li>
+                <li>
+                    <a href="product-list.html">Pc de bureau</a>
+                </li>
+            </ul>
+        </div>
+        <div class="m-product-filter m-box-content">
+            <form>
+                <h1> Pc de bureau </h1>
+                <h2> Sélection du produit :  </h2>
+                <div class="m-product-name">
+                    <h3> Marques :</h3>
+                    <div class="m-razer-filter">
+                        <input type="checkbox" name="razer" id="razer">
+                        <label> Razer </label>
+                    </div>
+                    <div class="m-logitech-filter">
+                        <input type="checkbox" name="logitech" id="logitech">
+                        <label> Logitech </label>
+                    </div>
+                    <div class="m-hp-filter">
+                        <input type="checkbox" name="hp" id="hp">
+                        <label> Hp </label>
+                    </div>
+                </div>
+                <div class="m-product-price">
+                    <h3> Prix :</h3>
+                    <div class="min-value-product">
+                        <label> Valeure minimale : </label>
+                        <input type="number" placeholder="0"   name="min-value" id="min-value" min="0" max="170">
+                    </div>
+                    <div class="max-value-product">
+                        <label> Valeure maximale : </label>
+                        <input type="number" placeholder="170"   name="max-value" id="max-value" min="0" max="170">
+                    </div>
+                    <div class="m-scope-product">
+                        <span class="scope-number-one"> 0 </span>
+                        <span class="m-scope-number-two"> 85 </span>
+                        <span class="m-scope-number-three"> 170 </span>
+                        <input type="range" name="value-scope-product" id="value-scope-product" min="0" max="170">
+                    </div>
+                </div>
+                <h3> Disponibilité :</h3>
+                <div class="m-product-disponibility">
+                        <input type="checkbox" name="stock-reserve" id="stock-reserve">
+                        <label> En stock </label>
+                </div>
+            </form>
+        </div>
+        <div class="m-product-list-page">
+            <span class="m-current-page"> 1 </span>
+            <span> 2 </span>
+            <span> 3 </span>
+        </div>
+        <div class="m-global-product-list"> 
+            <div class="m-items-product-list m-box-content">
+                <img src="images/pc-box.jpg" alt="illustration pc de bureau">
+                <a href="product-description.html"> HP Pavilion Gaming </a>
+                <p class="pc-description"> Parfait PC pour le gaming </p>
+                <span class="stock"> 15 en stock </span>
+                <div class="m-command-confirmation">
+                    <div class="m-price"> 1750 € </div>
+                    <a  href="order.html" class="m-add-to-cart-button"> </a>
+                </div>
+            </div>  
+            <div class="m-items-product-list m-box-content">
+                <img src="images/pc-box.jpg" alt="illustration pc de bureau">
+                <a href="product-description.html"> HP Pavilion Gaming </a>
+                <p class="pc-description"> Parfait PC pour le gaming </p>
+                <span class="stock"> 15 en stock </span>
+                <div class="m-command-confirmation">
+                    <div class="m-price"> 1750 € </div>
+                    <a  href="order.html" class="m-add-to-cart-button"> </a>
+                </div>
+            </div>  
+            <div class="m-items-product-list m-box-content">
+                <img src="images/pc-box.jpg" alt="illustration pc de bureau">
+                <a href="product-description.html"> HP Pavilion Gaming </a>
+                <p class="pc-description"> Parfait PC pour le gaming </p>
+                <span class="stock"> 15 en stock </span>
+                <div class="m-command-confirmation">
+                    <div class="m-price"> 1750 € </div>
+                    <a  href="order.html" class="m-add-to-cart-button"> </a>
+                </div>
+            </div>  
+            <div class="m-items-product-list m-box-content">
+                <img src="images/pc-box.jpg" alt="illustration pc de bureau">
+                <a href="product-description.html"> HP Pavilion Gaming </a>
+                <p class="pc-description"> Parfait PC pour le gaming </p>
+                <span class="stock"> 15 en stock </span>
+                <div class="m-command-confirmation">
+                    <div class="m-price"> 1750 € </div>
+                    <a  href="order.html" class="m-add-to-cart-button"> </a>
+                </div>
+            </div>  
+            <div class="m-items-product-list m-box-content">
+                <img src="images/pc-box.jpg" alt="illustration pc de bureau">
+                <a href="product-description.html"> HP Pavilion Gaming </a>
+                <p class="pc-description"> Parfait PC pour le gaming </p>
+                <span class="stock"> 15 en stock </span>
+                <div class="m-command-confirmation">
+                    <div class="m-price"> 1750 € </div>
+                    <a  href="order.html" class="m-add-to-cart-button"> </a>
+                </div>
+            </div>  
+            <div class="m-items-product-list m-box-content">
+                <img src="images/pc-box.jpg" alt="illustration pc de bureau">
+                <a href="product-description.html"> HP Pavilion Gaming </a>
+                <p class="pc-description"> Parfait PC pour le gaming </p>
+                <span class="stock"> 15 en stock </span>
+                <div class="m-command-confirmation">
+                    <div class="m-price"> 1750 € </div>
+                    <a  href="order.html" class="m-add-to-cart-button"> </a>
+                </div>
+            </div>  
+            <div class="m-items-product-list m-box-content">
+                <img src="images/pc-box.jpg" alt="illustration pc de bureau">
+                <a href="product-description.html"> HP Pavilion Gaming </a>
+                <p class="pc-description"> Parfait PC pour le gaming </p>
+                <span class="stock"> 15 en stock </span>
+                <div class="m-command-confirmation">
+                    <div class="m-price"> 1750 € </div>
+                    <a  href="order.html" class="m-add-to-cart-button"> </a>
+                </div>
+            </div>  
+            <div class="m-items-product-list m-box-content">
+                <img src="images/pc-box.jpg" alt="illustration pc de bureau">
+                <a href="product-description.html"> HP Pavilion Gaming </a>
+                <p class="pc-description"> Parfait PC pour le gaming </p>
+                <span class="stock"> 15 en stock </span>
+                <div class="m-command-confirmation">
+                    <div class="m-price"> 1750 € </div>
+                    <a  href="order.html" class="m-add-to-cart-button"> </a>
+                </div>
+            </div>  
+            <div class="m-items-product-list m-box-content">
+                <img src="images/pc-box.jpg" alt="illustration pc de bureau">
+                <a href="product-description.html"> HP Pavilion Gaming </a>
+                <p class="pc-description"> Parfait PC pour le gaming </p>
+                <span class="stock"> 15 en stock </span>
+                <div class="m-command-confirmation">
+                    <div class="m-price"> 1750 € </div>
+                    <a  href="order.html" class="m-add-to-cart-button"> </a>
+                </div>
+            </div>  
+            <div class="m-items-product-list m-box-content">
+                <img src="images/pc-box.jpg" alt="illustration pc de bureau">
+                <a href="product-description.html"> HP Pavilion Gaming </a>
+                <p class="pc-description"> Parfait PC pour le gaming </p>
+                <span class="stock"> 15 en stock </span>
+                <div class="m-command-confirmation">
+                    <div class="m-price"> 1750 € </div>
+                    <a  href="order.html" class="m-add-to-cart-button"> </a>
+                </div>
+            </div>  
+            <div class="m-items-product-list m-box-content">
+                <img src="images/pc-box.jpg" alt="illustration pc de bureau">
+                <a href="product-description.html"> HP Pavilion Gaming </a>
+                <p class="pc-description"> Parfait PC pour le gaming </p>
+                <span class="stock"> 15 en stock </span>
+                <div class="m-command-confirmation">
+                    <div class="m-price"> 1750 € </div>
+                    <a  href="order.html" class="m-add-to-cart-button"> </a>
+                </div>
+            </div>  
+            <div class="m-items-product-list m-box-content">
+                <img src="images/pc-box.jpg" alt="illustration pc de bureau">
+                <a href="product-description.html"> HP Pavilion Gaming </a>
+                <p class="pc-description"> Parfait PC pour le gaming </p>
+                <span class="stock"> 15 en stock </span>
+                <div class="m-command-confirmation">
+                    <div class="m-price"> 1750 € </div>
+                    <a  href="order.html" class="m-add-to-cart-button"> </a>
+                </div>
+            </div>  
+        </div>
+        <div class="m-product-list-page">
+            <span class="m-current-page"> 1 </span>
+            <span> 2 </span>
+            <span> 3 </span>
+        </div>           
+    </main>
+    <footer>
+        <div class="l-main-footer">
+            <p>
+                © Inforshop.store & site by
+                <a href="#"> isl scrl </a>
+            </p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+.m-register-form {
+    h1 {
+        margin-bottom: 60px;
+    }
+    
+    input {
+        width: 100%;
+    }
+
+    div {
+        margin-bottom: 30px;
+    }
+}
+
+.m-agree {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    position: relative;
+
+    label {
+        display: inline-block;
+        position: absolute;
+        left: 50px;
+        top: 8px;
+
+        span {
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+    }
+}
+
+.m-inscription-button,
+.m-send-button {
+    border: none;
+    background-color: $dark-gradient-color;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 8px 14px;
+    margin-left: 14px;
+}
+
+.m-inscription-button::before,
+.m-send-button::before {
+    content: "";
+    display: inline-block;
+    background-image: url("../images/check-solid-icon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin-bottom: -4px;
+}

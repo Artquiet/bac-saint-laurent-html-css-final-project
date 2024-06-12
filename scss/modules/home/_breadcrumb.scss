@@ -1,0 +1,40 @@
+.m-breadcrumb-list {
+    display: flex;
+    // reset the white border between the header and main
+    width: 400px;
+    max-width: 1100px;
+    img {
+        width: 24px;
+    }
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+
+    li {
+        list-style-type: none;
+        margin-top: 14px;
+        margin-right: 6px;
+        margin-bottom: 24px;
+        margin-left: 6px;
+    }
+
+    li:last-child a {
+        font-weight: bold;
+        color: $third-color;
+    }
+
+    a {
+        color: $bright-gradient-color;
+        font-size: 20px;
+        background-color: $main-color; 
+        text-decoration: underline;
+        padding: 10px;
+    }
+    
+    .m-breadcrumb-symbol{
+        width: 20px;
+    }
+}

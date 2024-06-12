@@ -1,0 +1,144 @@
+form
+{
+    h2 {
+        margin: 20px 0px 40px 0px;
+    }
+
+    padding-bottom: 20px;
+    input {
+        display: inline-block;
+        border: none;
+        border-bottom: 1px solid $bright-gradient-color;
+        width: 30px;
+        height: 30px;
+    }
+
+    label {
+        color: $bright-gradient-color;
+        font-weight: 700;
+        display: block;
+    }
+    select {
+        background-color: $fifth-color;
+        border-radius: 5px;
+        padding: 2px;
+    }
+}
+
+form.connexion-model
+{
+    //field section
+    background-color: $main-color;
+    margin: 10px 20px;
+
+    label {
+        display: block;
+        color: $bright-gradient-color;
+        font-weight: bold;
+        font-size: 22px;
+        padding: 30px 20px;
+    }
+
+    input {
+        margin: 8px 20px;
+        width: 90%;
+    }
+    // button section
+    a {
+        display: block;
+        background-color: $dark-gradient-color;
+        color: $main-color;
+        font-size: 18px;
+        text-decoration: none;
+        border-radius: 10px;
+        width: 110px;
+        margin: 20px;
+    }
+
+    a.google-connexion-toggle {
+        background-color: $main-color;
+        color: $dark-gradient-color;
+        border: 1px solid $dark-gradient-color;
+        width: 170px;
+    }
+
+    a.connexion-toggle::before{
+        margin-top: 4px;
+    }
+
+    a.connexion-toggle::before {
+        content: "";
+        display: inline-block;
+        background-image: url("../images/check-solid-icon.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 20px;
+        height: 20px;
+        margin-bottom: -4px;
+    }
+
+    a.google-connexion-toggle::before {
+        content: "";
+        display: inline-block;
+        background-image: url("../images/google-logo-icon.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 20px;
+        height: 20px;
+        margin-bottom: -4px;
+    }
+
+    a.connexion-toggle {
+        padding: 6px 20px 10px 20px;
+        margin:20px 20px 40px 20px ;
+    }
+
+     a.inscription-toggle {
+        padding: 10px 0px 10px 26px;
+    }
+
+    a.google-connexion-toggle {
+       padding: 10px;
+
+    }
+}
+
+.way-payment {
+    h2 {
+      margin-top: 30px;
+    }
+}
+
+.delivery-adress,
+.billing-adress,
+.way-payment {
+    input {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .typing-icon-placement::after {
+        content: "";
+        display: inline-block;
+        background: url("../images/home-icon.svg") no-repeat center/contain;
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        margin-left: -40px;
+        filter: grayscale(100%);
+    }
+    // liste des icones de formulaire
+    .typing-icon-placement.building-icon::after {
+        background: url("../images/building-icon.svg") no-repeat center/contain;
+    }
+    .typing-icon-placement.earth-globe-icon::after {
+        background: url("../images/earth-globe-icon.svg") no-repeat center/contain;
+        position: absolute;
+        right: 16vw;
+    }
+    .typing-icon-placement.credit-card-icon::after {
+        background: url("../images/credit-card-icon.svg") no-repeat center/contain;
+        position: absolute;
+        right: 16vw;
+    }
+}

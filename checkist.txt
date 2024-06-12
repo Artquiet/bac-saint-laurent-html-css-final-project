@@ -1,0 +1,4 @@
+checklist
+
+1) loader banner
+2) responsive

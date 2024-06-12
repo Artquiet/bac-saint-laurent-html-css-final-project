@@ -1,0 +1,98 @@
+.m-command-last-date {
+    text-align: right;
+    margin: 40px 0px 60px 0px;
+    
+    span {
+        color: $bright-gradient-color;
+        font-weight: 900;
+    }
+}
+
+.m-data-form {
+    label {
+        margin-bottom: 10px;
+    }
+    
+    input {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    div {
+        margin: 20px 0px 20px 0px;
+    }
+
+    .m-product-description {
+        color: $bright-gradient-color;
+        font-weight: 900;
+    } 
+
+    .m-product-detail {
+        border-bottom: 1px solid $bright-gradient-color;
+        margin-bottom: 50px;
+    }
+
+    .m-delete-interactive-button {
+        display: inline-block;
+        background-image: url("../images/trash-icon.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: $fifth-color;
+        width: 20px;
+        height: 20px;
+        border: none;
+    }
+}
+
+.m-order-result {
+    .m-product-description {
+        margin-bottom: 10px;
+    }
+}
+
+.m-delete-interactive-button-design {
+    background-color: $fifth-color;
+    border: 2px solid rgb(98, 98, 98);
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    padding: 6px;
+}
+
+.m-command-details {
+    h1 {
+       margin: 40px 0px 60px 0px;
+       text-align: right;
+       padding-right: 10px;
+    }
+
+    .m-price-description {
+        border-bottom: 1px solid $fifth-color;
+        margin: 30px 0px 10px 0px;
+        text-align: right;
+        padding-right: 10px;
+    }
+
+    .m-price {
+        color:$bright-gradient-color;
+        font-weight: 900;
+        text-align: right;
+        padding-right: 10px;
+    }
+
+    .m-button {
+        margin-top: 40px;
+        color: red;
+    }
+
+    .m-send-button-placement {
+        position: relative;
+        margin-top: 20px;
+        padding-bottom: 50px;
+        .send-button {
+            position: absolute;
+            right: 0px;
+        }
+    }
+}
+

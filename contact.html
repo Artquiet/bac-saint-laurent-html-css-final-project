@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <link rel="stylesheet" href="css/screen.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+    <link rel="preconnect" href="font/VesperLibre-Black.ttf">
+    <link rel="preconnect" href="font/VesperLibre-Bold.ttf">
+    <link rel="preconnect" href="font/VesperLibre-Medium.ttf">
+    <link rel="preconnect" href="font/VesperLibre-Regular.ttf">
+    <title> Contact </title>
+</head>
+
+<body>
+    <header>
+        <div class="l-group-menu">
+            <div class="l-home-menu">
+                <div class="l-logo-icon-frame">
+                    <a href="index.html">
+                        <img src="images/inforshop.png" alt="logo-inforshop-site-officiel" class="l-logo" />
+                    </a>
+                </div>
+                <!-- icone interactive burger menu -->
+                <a href="#" class="l-burger-menu" id="menuHamburger">
+                    <img src="images/burger-menu-icon.svg" alt="menu deroullant du site" />
+                </a>
+                <div id="mainMenu" class="l-nav">
+                    <a href="#" id="menuClose">
+                        <img src="images/close-solid-icon.svg" alt="menu retour page de navigation">
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="index.html"> Acceuil </a>
+                        </li>
+                        <li>
+                            <a href="product-list.html"> Produits </a>
+                        </li>
+                        <li>
+                            <a href="contact.html"> Contact </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="l-connexion-menu">
+                <a href="login.html">
+                    <div class="l-account-icon-design">
+                        <img src="images/user-icon.svg" alt="image connexion utilisateur" />
+                        <span> Compte </span>
+                    </div>
+                </a>
+                <a href="order.html">
+                    <div class="l-shopping-icon-design">
+                        <span class="l-alert-bubble"> 0 </span>
+                        <img src="images/cart-shopping-icon.svg" alt="image panier d achat" />
+                        <span> Panier </span>
+                    </div>
+                </a>
+            </div>
+            <form class="l-search-bar">
+                <input placeholder="Cherchez un produit ..." type="text" name="search product" />
+                <a href="#">
+                    <img src="images/magnifying-glass-icon.svg" alt="icone de recherche de produit" />
+                </a>
+            </form>
+        </div>
+    </header>
+    <main>
+        <div class="m-breadcrumb-list">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="images/home-icon.svg" alt="fil arianne iconne acceuil site">
+                    </a>
+                </li>
+                <li>
+                    <img class="m-breadcrumb-symbol" src="images/arrow-symbol-breadcrumb.svg"
+                        alt="fil arianne symbole fleche">
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="m-box-content-form">
+            <img src="images/localisation.png" alt="illustration localisation magasin InforShop" class="localisation-map-image">
+            <div class="m-contact-form">
+                <form>
+                    <h1>
+                        Contact <span> us </span>
+                    </h1>
+                    <div>
+                        <label> Votre prénom & Nom *</label>
+                        <input type="text" placeholder="Votre prénom & Nom *" required>
+                    </div>
+                    <div>
+                        <label> Votre email (pour vous répondre)*</label>
+                        <input type="text" placeholder="Votre email (pour vous répondre)*" required>
+                    </div>
+                    <div>
+                        <label> Votre téléphone *</label>
+                        <input type="number" placeholder="Votre téléphone *" required>
+                    </div>
+                    <div>
+                        <label> De quoi souhaitez-vous parler?*</label>
+                        <input type="text" placeholder="De quoi souhaitez-vous parler?*" required>
+                    </div>
+                    <div>
+                        <label> Expliquez moi en détail...*</label>
+                        <input type="text" placeholder="Expliquez moi en détail...*" required>
+                    </div>
+                    <button class="m-form-send-button-component"> Envoyez </button>
+
+                </form>
+            </div>
+            <div class="m-contact-information">
+                <h1> Information de contact </h1>
+                <span> Inforshop SRL </span>
+                <h2> Adresse </h2>
+                <p> Rue Saint-Laurent 33 </p>
+                <p> 4000 Liège </p>
+                <h2> Téléphone </h2>
+                <p> +32(0)4 365 21 45</p>
+                <h2> Horaire </h2>
+                <span> Notre équipe se tient à votre disposition du lundi au vendredi :</span>
+                <p> De: 9h00 à 18h00 </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="l-main-footer">
+            <p>
+                © Inforshop.store & site by 
+                <a href="#"> isl scrl </a>
+            </p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
