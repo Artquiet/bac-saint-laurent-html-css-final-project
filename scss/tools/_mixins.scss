@@ -16,6 +16,12 @@
     }
 }
 
+@mixin xl {
+    @media screen and (min-width: map-get($break-point, xl)) {
+        @content;
+    }
+}
+
 
 
 

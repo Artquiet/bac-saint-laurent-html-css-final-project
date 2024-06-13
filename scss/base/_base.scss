@@ -1,3 +1,10 @@
+// exemple code responsive mixin
+// main {
+//     background: blue;
+//     @include md {
+//         background: red;
+//     }
+//   }
 body {
     @font-face {
         font-family: "Vesper Libre", Calibri, Lucia Grande, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
@@ -9,6 +16,9 @@ body {
           url("../../font/VesperLibre-Regular.ttf") format("ttf"),
       }
 }
+
+// exemple utilisation mixins
+
 
 main {
     max-width: 1100px;

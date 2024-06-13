@@ -12,6 +12,10 @@ header {
     justify-content: space-between;
     margin-bottom: 40px;
 
+    @include md {
+        order: 1;
+    }
+
     .l-logo-icon-frame {
         background-color: $main-color;
         width: 150px;
@@ -31,6 +35,12 @@ header {
     justify-content: space-between;
     margin-bottom: 40px;
     width: 150px;
+
+    
+    @include md {
+        order: 3;
+        align-items: end;
+    }
 
     img {
         width: 50px;
