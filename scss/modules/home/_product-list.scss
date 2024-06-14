@@ -90,6 +90,12 @@
     margin-top: 40px;
     margin-bottom: 40px;
 
+    @include md {
+        margin-left: 1%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
     span {
         display: inline-block;
         background-color: white;
@@ -131,6 +137,58 @@
         position: absolute;
         right: 0px;
         top: -44px;
+    }
+}
+
+@include md {
+    .m-product-list-design-placement {
+        display: flex;
+        gap: 40px;
+        width: 96%;
+        max-width: 1100px;
+        margin: 0 auto;
+
+        .m-product-filter {
+            width: 33.3%;
+        }
+
+        .m-product-list-list-item-placement {
+            width: 66.6%;
+        }
+    }
+
+    .m-global-product-list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .m-items-product-list {
+        width: 37%;
+        margin: 0;
+    }
+}
+
+@include lg {
+
+    .m-items-product-list {
+        width: 23%;
+    }
+}
+
+@include xl {
+
+    .m-items-product-list {
+        width: 25%;
+    }
+}
+
+// resolve bug for the filter
+
+@include md {
+    .m-product-filter {
+        height: 100vh;
     }
 }
 

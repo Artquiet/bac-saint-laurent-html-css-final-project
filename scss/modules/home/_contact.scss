@@ -47,3 +47,31 @@
 .m-contact-information {
     padding: 20px;  
 }
+
+@include md {
+    .m-contact-placement {
+        display: flex;
+        align-items: baseline;
+        width: 100%;
+    }
+
+    .m-contact-form {
+        width: 60.6%;
+    }
+
+    .m-contact-information {
+        width: 33.3%;
+        
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            margin-bottom: 6px;
+        }
+
+       
+    }
+
+}
