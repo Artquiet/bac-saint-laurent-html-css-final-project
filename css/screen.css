@@ -318,7 +318,6 @@ main {
   max-width: 1100px;
   margin: 0 auto;
   padding-top: 330px;
-  background-color: rgba(0, 0, 0, 0.1176470588);
   padding-bottom: 40px;
 }
 
@@ -422,6 +421,7 @@ form.connexion-model a.connexion-toggle::before {
   width: 20px;
   height: 20px;
   margin-bottom: -4px;
+  padding-right: 4px;
 }
 form.connexion-model a.google-connexion-toggle::before {
   content: "";
@@ -434,7 +434,7 @@ form.connexion-model a.google-connexion-toggle::before {
   margin-bottom: -4px;
 }
 form.connexion-model a.connexion-toggle {
-  padding: 6px 20px 10px 20px;
+  padding: 6px 30px 10px 30px;
   margin: 20px 20px 40px 20px;
 }
 form.connexion-model a.inscription-toggle {
@@ -731,6 +731,8 @@ footer a {
   width: 78%;
   margin: 0px auto 10px;
   padding: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.1176470588);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1176470588);
 }
 @media screen and (min-width: 720px) {
   .m-box-content {
