@@ -50,21 +50,25 @@
 
 .under-nav-bar {
     display: none;
+    padding-left: 6%;
 
     @include md {
         display: flex;
         max-width: 1100px;
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
 
         ul {
             display: flex;
-            width: 400px;
+            justify-content: space-around;
+            width: 300px;
+            padding: 0;
         }
+
         a {
             color: $main-color;
             font-size: 20px;
-            margin-right: 40px;
+           
         }
     }
 

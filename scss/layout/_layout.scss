@@ -4,7 +4,7 @@
     margin: 0 auto;
     @include md {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 }
 
@@ -16,7 +16,7 @@
     @include md {
         order: 2;
         margin-top: 30px;
-        width: 40%;
+        width: 48%;
     }
 
     input {

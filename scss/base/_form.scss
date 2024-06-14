@@ -101,6 +101,12 @@ form.connexion-model
        padding: 10px;
 
     }
+
+    @include md {
+        .connexion-button-group {
+            display: flex;
+        }
+    }
 }
 
 .way-payment {
@@ -109,11 +115,31 @@ form.connexion-model
     }
 }
 
+@include md {
+    .delivery-adress-placement,
+    .billing-adress-placement,
+    .m-register-form-placement {
+      display: flex;
+      width: 100%;
+      gap: 20px;  
+      
+      div {
+        width: 100%;
+      }
+    }
+
+    .e-mail-placement, 
+    .brithday-date-placement {
+        width: 49%;
+    }
+}
+
 .delivery-adress,
 .billing-adress,
 .way-payment {
     input {
         width: 100%;
+        max-width: 1100px;
         margin-bottom: 40px;
     }
 
@@ -131,14 +157,24 @@ form.connexion-model
     .typing-icon-placement.building-icon::after {
         background: url("../images/building-icon.svg") no-repeat center/contain;
     }
+
     .typing-icon-placement.earth-globe-icon::after {
         background: url("../images/earth-globe-icon.svg") no-repeat center/contain;
         position: absolute;
         right: 13%;
+
+        @include md {
+           right: 52.5%;
+        }
     }
+
     .typing-icon-placement.credit-card-icon::after {
         background: url("../images/credit-card-icon.svg") no-repeat center/contain;
         position: absolute;
         right: 13%;
+
+        @include md {
+            right: 52.5%;
+         }
     }
 }

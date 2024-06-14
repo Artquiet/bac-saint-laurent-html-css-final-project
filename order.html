@@ -98,62 +98,67 @@
         </div>
         <div class="m-box-content">
             <form>
-                <div class="title-date-command">
-                    <h1> Mon panier </h1>
-                    <div class="m-command-last-date">
-                        Dernière mise à jour :
-                        <span> 27/03/2022, 20:25:08 </span>
+                <div class="m-title-date-command">
+                    <div>
+                        <h1> Mon panier </h1>
+                    </div>
+                    <div>
+                        <p class="m-command-last-date">
+                            Dernière mise à jour :
+                            <span> 27/03/2022, 20:25:08 </span>
+                        </p>
                     </div>
                 </div>
                 <div class="m-data-form">
                     <div class="m-product-description-list">
-                        <div class="m-product-description">
+                        <label class="m-product-description">
                             Produit
-                        </div>
-                        <div class="m-product-detail"> Clavier logitech K860 </div>
+                        </label>
+                        <input type="text" class="m-product-detail" placeholder="Clavier logitech K860"> 
                     </div>
                     <div class="quantity">
                         <label> Quantité </label>
-                        <input type="number" value="1" required>
+                        <input type="number" value="1" placeholder="1" required>
                     </div>
                     <div class="price-unit">
-                        <div class="m-product-description">
+                        <label class="m-product-description">
                             Prix unitaire
-                        </div>
-                        <div class="product-detail"> 100€ </div>
+                        </label>
+                        <input  type="number" class="product-detail" placeholder="100€" required>  
                     </div>
                     <div class="tva-purcent">
-                        <div class="m-product-description">
+                        <label class="m-product-description">
                             TVA(%)
-                        </div>
-                        <div class="product-detail"> 21€ </div>
+                        </label >
+                        <input  type="number" placeholder="21" class="product-detail" required>
                     </div>
                     <div class="total-tva-price">
-                        <div class="m-product-description">
+                        <label class="m-product-description">
                             Total HTVA
-                        </div>
-                        <div class="product-detail"> 100€ </div>
+                        </label>
+                        <input  type="number" class="product-detail" placeholder="100€" required>
                     </div>
                     <div class="m-order-result">
                         <label class="m-product-description">
                             Annulation de la commande
                         </label>
                         <div class="m-delete-interactive-button-design">
-                            <input type="button" value=" " id="delete-button" class="m-delete-interactive-button">
+                            <button class="m-delete-interactive-button">
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="m-command-details">
                     <h1> Prix total commande </h1>
-                    <div>
+                    <div class="m-command-details-placement">
                         <div class="m-price-description"> Total HTVA </div>
                         <div class="m-price"> 100 €</div>
                     </div>
-                    <div>
+                    <div class="m-command-details-placement">
                         <div class="m-price-description"> Total TVA </div>
                         <div class="m-price"> 21€ </div>
                     </div>
-                    <div>
+                    <div class="m-command-details-placement">
                         <div class="m-price-description"> Total TVAC </div>
                         <div class="m-price"> 121€ </div>
                     </div>

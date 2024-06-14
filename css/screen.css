@@ -443,15 +443,39 @@ form.connexion-model a.inscription-toggle {
 form.connexion-model a.google-connexion-toggle {
   padding: 10px;
 }
+@media screen and (min-width: 720px) {
+  form.connexion-model .connexion-button-group {
+    display: flex;
+  }
+}
 
 .way-payment h2 {
   margin-top: 30px;
 }
 
+@media screen and (min-width: 720px) {
+  .delivery-adress-placement,
+  .billing-adress-placement,
+  .m-register-form-placement {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+  }
+  .delivery-adress-placement div,
+  .billing-adress-placement div,
+  .m-register-form-placement div {
+    width: 100%;
+  }
+  .e-mail-placement,
+  .brithday-date-placement {
+    width: 49%;
+  }
+}
 .delivery-adress input,
 .billing-adress input,
 .way-payment input {
   width: 100%;
+  max-width: 1100px;
   margin-bottom: 40px;
 }
 .delivery-adress .typing-icon-placement::after,
@@ -478,12 +502,26 @@ form.connexion-model a.google-connexion-toggle {
   position: absolute;
   right: 13%;
 }
+@media screen and (min-width: 720px) {
+  .delivery-adress .typing-icon-placement.earth-globe-icon::after,
+  .billing-adress .typing-icon-placement.earth-globe-icon::after,
+  .way-payment .typing-icon-placement.earth-globe-icon::after {
+    right: 52.5%;
+  }
+}
 .delivery-adress .typing-icon-placement.credit-card-icon::after,
 .billing-adress .typing-icon-placement.credit-card-icon::after,
 .way-payment .typing-icon-placement.credit-card-icon::after {
   background: url("../images/credit-card-icon.svg") no-repeat center/contain;
   position: absolute;
   right: 13%;
+}
+@media screen and (min-width: 720px) {
+  .delivery-adress .typing-icon-placement.credit-card-icon::after,
+  .billing-adress .typing-icon-placement.credit-card-icon::after,
+  .way-payment .typing-icon-placement.credit-card-icon::after {
+    right: 52.5%;
+  }
 }
 
 .l-group-menu {
@@ -494,7 +532,7 @@ form.connexion-model a.google-connexion-toggle {
 @media screen and (min-width: 720px) {
   .l-group-menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
@@ -507,7 +545,7 @@ form.connexion-model a.google-connexion-toggle {
   .l-search-bar {
     order: 2;
     margin-top: 30px;
-    width: 40%;
+    width: 48%;
   }
 }
 .l-search-bar input {
@@ -645,22 +683,24 @@ header {
 
 .under-nav-bar {
   display: none;
+  padding-left: 6%;
 }
 @media screen and (min-width: 720px) {
   .under-nav-bar {
     display: flex;
     max-width: 1100px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
   .under-nav-bar ul {
     display: flex;
-    width: 400px;
+    justify-content: space-around;
+    width: 300px;
+    padding: 0;
   }
   .under-nav-bar a {
     color: #fff;
     font-size: 20px;
-    margin-right: 40px;
   }
 }
 
@@ -691,6 +731,12 @@ footer a {
   width: 78%;
   margin: 0px auto 10px;
   padding: 20px;
+}
+@media screen and (min-width: 720px) {
+  .m-box-content {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .m-form-button-component {
@@ -772,6 +818,8 @@ footer a {
 @media screen and (min-width: 720px) {
   .m-category-list h1 {
     width: 100%;
+    font-size: 32px;
+    margin-left: 0px;
   }
 }
 .m-category-list .m-box-content {
@@ -798,6 +846,9 @@ footer a {
   .m-discover {
     display: flex;
     flex-wrap: wrap;
+    column-gap: 20px;
+    width: 90%;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 720px) {
@@ -807,9 +858,14 @@ footer a {
   .m-discover .m-box-content {
     max-width: 1100px;
     width: 48%;
-    flex-gap: 20px;
     padding: 0px;
   }
+}
+.m-news .m-box-content p,
+.m-promotion .m-box-content p,
+.m-category .m-box-content p,
+.m-discover .m-box-content p {
+  text-align: center;
 }
 
 .m-breadcrumb-list {
@@ -1050,7 +1106,13 @@ footer a {
 .m-box-content-form {
   background-color: #fff;
   width: 78%;
+  max-width: 1100px;
   margin: 0px auto 10px;
+}
+@media screen and (min-width: 720px) {
+  .m-box-content-form {
+    width: 90%;
+  }
 }
 
 .m-contact-form h1 {
@@ -1109,6 +1171,12 @@ footer a {
   text-decoration: underline;
 }
 
+.m-send-button {
+  position: absolute;
+  right: 0px;
+  top: 10px;
+}
+
 .m-inscription-button,
 .m-send-button {
   border: none;
@@ -1132,15 +1200,37 @@ footer a {
   margin-bottom: -4px;
 }
 
+@media screen and (min-width: 720px) {
+  .m-title-date-command {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
 .m-command-last-date {
   text-align: right;
   margin: 40px 0px 60px 0px;
+}
+@media screen and (min-width: 720px) {
+  .m-command-last-date {
+    margin: 20px 0px 0px 0px;
+  }
 }
 .m-command-last-date span {
   color: rgb(33, 110, 184);
   font-weight: 900;
 }
 
+@media screen and (min-width: 720px) {
+  .m-data-form {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .m-data-form div {
+    width: 100%;
+  }
+}
 .m-data-form label {
   margin-bottom: 10px;
 }
@@ -1162,25 +1252,24 @@ footer a {
 .m-data-form .m-delete-interactive-button {
   display: inline-block;
   background-image: url("../images/trash-icon.svg");
+  background-color: transparent;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: rgba(153, 153, 153, 0.2352941176);
-  width: 20px;
-  height: 20px;
+  width: 100%;
+  height: 24px;
   border: none;
 }
 
 .m-order-result .m-product-description {
   margin-bottom: 10px;
 }
-
-.m-delete-interactive-button-design {
-  background-color: rgba(153, 153, 153, 0.2352941176);
-  border: 2px solid rgb(98, 98, 98);
-  border-radius: 4px;
-  width: 20px;
-  height: 20px;
-  padding: 6px;
+@media screen and (min-width: 720px) {
+  .m-order-result .m-product-description {
+    margin-top: -24px;
+  }
+}
+.m-order-result .m-delete-interactive-button-design {
+  border-bottom: 1px solid rgb(33, 110, 184);
 }
 
 .m-command-details h1 {
@@ -1188,11 +1277,21 @@ footer a {
   text-align: right;
   padding-right: 10px;
 }
+@media screen and (min-width: 720px) {
+  .m-command-details h1 {
+    margin: -40px 0px 0px 0px;
+  }
+}
 .m-command-details .m-price-description {
   border-bottom: 1px solid rgba(153, 153, 153, 0.2352941176);
   margin: 30px 0px 10px 0px;
   text-align: right;
   padding-right: 10px;
+}
+@media screen and (min-width: 720px) {
+  .m-command-details .m-price-description {
+    border: none;
+  }
 }
 .m-command-details .m-price {
   color: rgb(33, 110, 184);
@@ -1212,6 +1311,18 @@ footer a {
 .m-command-details .m-send-button-placement .send-button {
   position: absolute;
   right: 0px;
+}
+
+@media screen and (min-width: 720px) {
+  .m-command-details-placement {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+  }
+  .m-price {
+    margin: 0px;
+    padding: 0px;
+  }
 }
 
 /*# sourceMappingURL=screen.css.map */

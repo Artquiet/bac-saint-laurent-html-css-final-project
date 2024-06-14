@@ -1,4 +1,5 @@
 checklist
 
-1) loader banner
-2) responsive
+1) responsive.
+
+2) loader banner desktop mode.
